@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/bukhari-script" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<title>Products</title>
+
+</head>
+
+<body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<img src="image/2Logo.png" width="130px">
+		</div>
+
+		<nav>
+			<ul id="MenuItems">
+					<li><a href="Homepage.html">Home</a></li>
+					<li class="active"><a href="Products.html">Products</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contact</a></li>
+					<li><a href="OrderNow.html">Order Now!</a></li>
+			</ul>
+		</nav>
+			<img src="image/1MenuBar.png" class="menu-icon" onclick="menutoggle()">
+	</div>
+</div>
+
+<div class="small-container">
+	<div class="row row-2" id="myBtnContainer">
+		<button id="btn1new" class="btn1 active1" onclick="filterSelection('all')"> All Products</button>
+		<button class="btn1" onclick="filterSelection('cake')"> Cake</button>
+		<button class="btn1" onclick="filterSelection('coffee')"> Coffee</button>
+		<button class="btn1" onclick="filterSelection('cup')"> Cupcake</button>
+		<button class="btn1" onclick="filterSelection('frappe')"> Frappe</button>
+	</div>
+
+	<div class="row">
+			<div class="col-4 cake" data-name="p-1">
+				<img src="productsImage/cake (1).png">
+				<h4>Cherry Vanilla Cake</h4>
+				<p>&#x20B1; 700</p>
+			</div>
+
+			<div class="col-4 coffee" data-name="p-2">
+				<img src="productsImage/coffee (1).png">
+				<h4>Chocoffee Mallow</h4>
+				<p>&#x20B1; 120</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-3">
+				<img src="productsImage/cupcake (1).png">
+				<h4>Mint Choco Cupcake</h4>
+				<p>&#x20B1; 200</p>
+			</div>
+
+			<div class="col-4 frappe" data-name="p-4">
+				<img src="productsImage/frappe (1).png">
+				<h4>Choco Frappe</h4>
+				<p>&#x20B1; 140</p>
+			</div>
+
+			<div class="col-4 cake" data-name="p-5">
+				<img src="productsImage/cake (2).png">
+				<h4>Cookies n Cream Cake</h4>
+				<p>&#x20B1; 800</p>
+			</div>
+
+			<div class="col-4 coffee" data-name="p-6">
+				<img src="productsImage/coffee (2).png">
+				<h4>Cold Coffee Jelly</h4>
+				<p>&#x20B1; 150</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-7">
+				<img src="productsImage/cupcake (2).png">
+				<h4>Cherrry Vanilla Cupcake</h4>
+				<p>&#x20B1; 230</p>
+			</div>
+
+			<div class="col-4 frappe" data-name="p-8">
+				<img src="productsImage/frappe (2).png">
+				<h4>Vanilla cream Frappe</h4>
+				<p>&#x20B1; 180</p>
+			</div>
+
+			<div class="col-4 cake" data-name="p-9">
+				<img src="productsImage/cake (3).png">
+				<h4>Chocolate Cake</h4>
+				<p>&#x20B1; 700</p>
+			</div>
+
+			<div class="col-4 coffee" data-name="p-10">
+				<img src="productsImage/coffee (3).png">
+				<h4>Hot Coffee Jelly</h4>
+				<p>&#x20B1; 90</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-11">
+				<img src="productsImage/cupcake (3).png">
+				<h4>Red Velvet Cake</h4>
+				<p>&#x20B1; 180</p>
+			</div>
+
+			<div class="col-4 frappe" data-name="p-12">
+				<img src="productsImage/frappe (3).png">
+				<h4>Supreme Choco Frappe</h4>
+				<p>&#x20B1; 180</p>
+			</div>
+
+			<div class="col-4 cake" data-name="p-13">
+				<img src="productsImage/cake (4).png">
+				<h4>Strawberry Cake</h4>
+				<p>&#x20B1; 1000</p>
+			</div>
+
+			<div class="col-4 coffee" data-name="p-14">
+				<img src="productsImage/coffee (4).png">
+				<h4>Dalgona Coffee Jelly</h4>
+				<p>&#x20B1; 160</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-15">
+				<img src="productsImage/cupcake (4).png">
+				<h4>Tako Cupcake</h4>
+				<p>&#x20B1; 150</p>
+			</div>
+
+			<div class="col-4 frappe" data-name="p-16">
+				<img src="productsImage/frappe (4).png">
+				<h4>White Shake Frappe</h4>
+				<p>&#x20B1; 140</p>
+			</div>
+
+			<div class="col-4 cake" data-name="p-17">
+				<img src="productsImage/cake (5).png">
+				<h4>Bubblegum Cake</h4>
+				<p>&#x20B1; 700</p>
+			</div>
+
+			<div class="col-4 coffee" data-name="p-18">
+				<img src="productsImage/coffee (5).png">
+				<h4>Iced Dalgona</h4>
+				<p>&#x20B1; 100</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-19">
+				<img src="productsImage/cupcake (5).png">
+				<h4>Strawberry Cupcake</h4>
+				<p>&#x20B1; 190</p>
+			</div>
+
+			<div class="col-4 frappe" data-name="p-20">
+				<img src="productsImage/frappe (5).png">
+				<h4>Chocoffee Frappe</h4>
+				<p>&#x20B1; 140</p>
+			</div>
+
+			<div class="col-4 cake" data-name="p-21">
+				<img src="productsImage/cake (6).png">
+				<h4>Matcha Cake</h4>
+				<p>&#x20B1; 600</p>
+			</div>
+
+			<div class="col-4 coffee" data-name="p-22">
+				<img src="productsImage/coffee (6).png">
+				<h4>Cold Espresso</h4>
+				<p>&#x20B1; 140</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-23">
+				<img src="productsImage/cupcake (6).png">
+				<h4>Black Forest Cupcake</h4>
+				<p>&#x20B1; 160</p>
+			</div>
+
+			<div class="col-4 frappe" data-name="p-24">
+				<img src="productsImage/frappe (6).png">
+				<h4>Choco Frappe</h4>
+				<p>&#x20B1; 150</p>
+			</div>
+
+			<div class="col-4 cake" data-name="p-25">
+				<img src="productsImage/cake (7).png">
+				<h4>Strawberry White Choco</h4>
+				<p>&#x20B1; 900</p>
+			</div>
+
+			<div class="col-4 coffee" data-name="p-26">
+				<img src="productsImage/coffee (7).png">
+				<h4>Matcha Coffee</h4>
+				<p>&#x20B1; 85</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-27">
+				<img src="productsImage/cupcake (7).png">
+				<h4>Soda Cream Cupcake</h4>
+				<p>&#x20B1; 200</p>
+			</div>
+
+			<div class="col-4 frappe" data-name="p-28">
+				<img src="productsImage/frappe (7).png">
+				<h4>Choco Mountain Frappe</h4>
+				<p>&#x20B1; 180</p>
+			</div>
+
+			<div class="col-4 cake" data-name="p-29">
+				<img src="productsImage/cake (8).png">
+				<h4>Cheese Birthday Cake</h4>
+				<p>&#x20B1; 1000</p>
+			</div>
+
+			<div class="col-4 coffee" data-name="p-30">
+				<img src="productsImage/coffee (8).png">
+				<h4>Hot Espresso</h4>
+				<p>&#x20B1; 100</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-31">
+				<img src="productsImage/cupcake (8).png">
+				<h4>Butterscotch Cupcake</h4>
+				<p>&#x20B1; 180</p>
+			</div>
+
+			<div class="col-4 frappe" data-name="p-32">
+				<img src="productsImage/frappe (8).png">
+				<h4>a</h4>
+				<p>&#x20B1; 150</p>
+			</div>
+
+			<div class="col-4 cake" data-name="p-33">
+				<img src="productsImage/cake (9).png">
+				<h4>Milk Caramel Frappe</h4>
+				<p>&#x20B1; 150</p>
+			</div>
+
+			<div class="col-4 coffee" data-name="p-34">
+				<img src="productsImage/coffee (9).png">
+				<h4>Chocoffe</h4>
+				<p>&#x20B1; 120</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-35">
+				<img src="productsImage/cupcake (9).png">
+				<h4>Triple Cream Cupcake</h4>
+				<p>&#x20B1; 230</p>
+			</div>
+
+			<div class="col-4 frappe" data-name="p-36">
+				<img src="productsImage/frappe (9).png">
+				<h4>Monster Choco Frappe</h4>
+				<p>&#x20B1; 180</p>
+			</div>
+
+			<div class="col-4 cake" data-name="p-37">
+				<img src="productsImage/cake (10).png">
+				<h4>Starry Night Cake</h4>
+				<p>&#x20B1; 1200</p>
+			</div>
+
+			<div class="col-4 coffee" data-name="p-38">
+				<img src="productsImage/coffee (10).png">
+				<h4>Black Coffee</h4>
+				<p>&#x20B1; 85</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-39">
+				<img src="productsImage/cupcake (10).png">
+				<h4>Strawberry Cupcake</h4>
+				<p>&#x20B1; 230</p>
+			</div>
+
+			<div class="col-4 frappe" data-name="p-40">
+				<img src="productsImage/frappe (10).png">
+				<h4>Choco Sprinkle Frappe</h4>
+				<p>&#x20B1; 150</p>
+			</div>
+
+			<div class="col-4 cake" data-name="p-41">
+				<img src="productsImage/cake (11).png">
+				<h4>Heart Stopper Cake</h4>
+				<p>&#x20B1; 2000</p>
+			</div>
+
+			<div class="col-4 coffee" data-name="p-42">
+				<img src="productsImage/coffee (11).png">
+				<h4>Espresso </h4>
+				<p>&#x20B1; 100</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-43">
+				<img src="productsImage/cupcake (11).png">
+				<h4>White cream Cupcake</h4>
+				<p>&#x20B1; 200</p>
+			</div>
+
+			<div class="col-4 frappe" data-name="p-44">
+				<img src="productsImage/frappe (11).png">
+				<h4>Caramel Frappe</h4>
+				<p>&#x20B1; 180</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-45">
+				<img src="productsImage/cupcake (12).png">
+				<h4>Chocolate Cupcake</h4>
+				<p>&#x20B1; 180</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-46">
+				<img src="productsImage/cupcake (13).png">
+				<h4>Oreo Cupcake</h4>
+				<p>&#x20B1; 160</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-47">
+				<img src="productsImage/cupcake (14).png">
+				<h4>Special Cupcake</h4>
+				<p>&#x20B1; 250</p>
+			</div>
+
+			<div class="col-4 cup" data-name="p-48">
+				<img src="productsImage/Cupcake (15).png">
+				<h4>Milk Tea Cupcake</h4>
+				<p>&#x20B1; 200</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--PREVIEW-->
+<div class="products-preview">
+	<div class="preview" data-target="p-1">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cake (1).png">
+			<h1>Cherry Vanilla Cake</h1>
+			<h4>&#x20B1; 700</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"This cherry vanilla cake has a lot of layers with soft vanilla cake filled with cherry buttercream, decorated with piped buttercream rosettes."</p>
+			<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-2">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Coffee (1).png">
+			<h1>Chocoffee Mallowe</h1>
+			<h4>&#x20B1; 120</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Top with fluffy marshmallows combined with coffee, this is best drink for teen agers during the cold season."</p>
+			<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-3">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (1).png">
+			<h1>Mint Choco Cupcake</h1>
+			<h4>&#x20B1; 200</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"A deliciously moist Valrhona chocolate cupcake topped with a tiny donut and a candy cane."</p>
+			<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-4">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Frappe (1).png">
+			<h1>Choco Frappe</h1>
+			<h4>&#x20B1; 140</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Creamy and often flavoring with blended or whipped until foamy."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-5">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cake (2).png">
+			<h1>Cookies and Cream Cake</h1>
+			<h4>&#x20B1; 800</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The cookies and cream cake is buttery, soft, and moist and the frosting has a creamy whipped texture that's slightly heavier."</p>
+				<p6>Availability: 10 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-6">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Coffee (2).png">
+			<h1>Cold Coffee Jelly</h1>
+			<h4>&#x20B1; 150</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"This popular blend has a smooth mild medium-body.It's perfect for after meal desserts and creates a full layered flavor-profile with hints of jasmine hibiscus."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-7">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (2).png">
+			<h1>Cherrry Vanilla Cupcake</h1>
+			<h4>&#x20B1; 230</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Strawberry cupcakes that are light and fluffy with strawberry buttercream frosting. Also, make them in tiny sizes!"</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-8">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Frappe (2).png">
+			<h1>Vanilla ice cream Frappe</h1>
+			<h4>&#x20B1; 180</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"A blend of milk, syrup, and ice cream. Topped with whipped cream."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-9">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cake (3).png">
+			<h1>Chocolate Cake</h1>
+			<h4>&#x20B1; 700</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"This is a cake flavored with melted chocolate, cocoa powder, or both."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-10">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Coffee (3).png">
+			<h1>Hot Coffee Jelly</h1>
+			<h4>&#x20B1; 90</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The alluring aroma of this blend compliments a mild,light bodied composition. Gelato and chocolate-like notes offer a delicate sweetness and a rounded cup with flavor that is meant to be "</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-11">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (3).png">
+			<h1>Red Velvet Cake</h1>
+			<h4>&#x20B1; 180</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Swiss meringue buttercream, chocolate buttercream, a not-too-sweet whipped icing, and even my recipe for thick whipped cream all work nicely on it."</p>
+				<p6>Availability: 8 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-12">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Frappe (3).png">
+			<h1>Supreme Choco Frappe</h1>
+			<h4>&#x20B1; 180</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Marshmallow-infused whipped cream, milk chocolate sauce, a creamy blend of  vanilla, coffee, milk and ice are finished off with more marshmallowy whipped cream and a top of Hershey's chocolate."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-13">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cake (4).png">
+			<h1>Strawberry Almond Cake</h1>
+			<h4>&#x20B1; 1000</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"This moist, tender, and perfectly fluffy almond-flour cake is topped with fresh strawberries and is sure to be a crowd-pleaser."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-14">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Coffee (4).png">
+			<h1>Dalgona Coffee Jelly</h1>
+			<h4>&#x20B1; 160</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Noted for its full-bodied cup with striking flavors that are both nutty bitter-sweet.This blend makes an ideal choice for lattes,mochas,or single shots."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-15">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (4).png">
+			<h1>Tako Cupcake</h1>
+			<h4>&#x20B1; 150</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"These cupcake with cookie dough filling and chocolate chip cookie dough buttercream on top."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-16">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Frappe (4).png">
+			<h1>White Shake Chip Frappe</h1>
+			<h4>&#x20B1; 140</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Chips are blended with milk and ice, layered on top of whipped cream and chocolate cookie crumble and topped with vanilla whipped cream, mocha drizzle and even more chocolate cookie crumble."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-17">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cake (5).png">
+			<h1>Bubblegum Cake</h1>
+			<h4>&#x20B1; 700</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Bubblegum is an iconic flavor that is as American as apple pie. It's sweet, it's sticky, it's pink, and it's familiar to everyone."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-18">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Coffee (5).png">
+			<h1>Iced Dalgona</h1>
+			<h4>&#x20B1; 100</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The alluring aroma of this blend compliments a mild,light bodied composition.Nutty and chocolate-like notes offer a delicate acidity and a sweet,rounded cup with flavor that is meant to be savored."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-19">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (5).png">
+			<h1>Strawberry mint Cupcake</h1>
+			<h4>&#x20B1; 190</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"These wonderful cupcakes are packed with strawberry jam and softly seasoned merengue. Top with vanilla matcha flavor and a variety of sweets. "</p>
+				<p6>Availability: 5 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-20">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Frappe (5).png">
+			<h1>Chocoffee Frappe</h1>
+			<h4>&#x20B1; 140</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Bittersweet mocha sauce and chocolatey chips melted into steamed milk for a smooth and creamy taste."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-21">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cake (6).png">
+			<h1>Matcha Cake</h1>
+			<h4>&#x20B1; 600</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"This matcha cake recipe is made with matcha cake layers & fluffy buttercream frosting! It's a deliciously light dessert."</p>
+				<p6>Availability: 6 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-22">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Coffee (6).png">
+			<h1>Cold Espresso</h1>
+			<h4>&#x20B1; 400</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Bursting with flavor aroma,this popular medium-roasted coffee is as smooth as it is sharp with flavor.The cup features undertones of cappuccino and an accent of honey highlighting its delicious floral notes."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-23">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (6).png">
+			<h1>Black Forest Cupcake</h1>
+			<h4>&#x20B1; 160</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"These is a chocolate cupcake with a creamy vanilla. A soft, fluffy, and cake-like crumb is ensured when cake flour, sour cream, and egg whites (no yolks!) are used. A typical vanilla taste is sealed in by using pure vanilla essence and perhaps adding cherry strawberry beans."</p>
+				<p6>Availability: 7 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-24">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Frappe (6).png">
+			<h1>Choco Frappe (caramel syrup)</h1>
+			<h4>&#x20B1; 150</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Blend Mocha sauce and toffee nut syrup with coffee, milk and ice then finish it off with sweetened whipped cream, caramel sauce and a blend of turbinado sugar and sea salt for an explosion of flavor in every sip."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-25">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cake (7).png">
+			<h1>Strawberry White Choco Cake</h1>
+			<h4>&#x20B1; 900</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Soft white cake with a filling of strawberry mousse and fresh strawberries. Frosted with white chocolate whipped cream and decorated with white chocolate."</p>
+				<p6>Availability: 11 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-26">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Coffee (7).png">
+			<h1>Matcha Coffee</h1>
+			<h4>&#x20B1; 85</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"This shade-grown coffee has a rich,bright,elegant body with a sweet, uplifting,almond finish.This light-to-medium body is perfect for mornings."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-27">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (7).png">
+			<h1>Soda Cream Cake</h1>
+			<h4>&#x20B1; 200</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"These amazing Cupcakes, which are an adaptation of my vanilla cupcakes, are delicately spiced with cinnamon and nutmeg and filled with fruit jam. "</p>
+				<p6>Availability: 12 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-28">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Frappe (7).png">
+			<h1>Choco Mountain Frappe</h1>
+			<h4>&#x20B1; 180</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Gingerbread flavored syrup, milk and ice topped with spiced whipped cream and a molasses drizzle."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-29">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cake (8).png">
+			<h1>Cheese Birthday Cake</h1>
+			<h4>&#x20B1; 1000</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Cheese celebration cakes for every occasion. The Fine Cheese Co. have cheese cakes for parties of 5 to 25 for birthdays, anniversaries and gifts."</p>
+				<p6>Availability: 14 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-30">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Coffee (8).png">
+			<h1>Hot Espresso</h1>
+			<h4>&#x20B1; 100</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"This premium coffee is complex,mild smooth,yet bright lively.It is regarded as the cooling coffee in our store.This aromatic coffee has a medium-body with a creamy-like taste profile."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-31">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (8).png">
+			<h1>Butterscotch Cupcake</h1>
+			<h4>&#x20B1; 180</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"These simple, homemade chai latte cupcakes mix soft, fluffy cupcakes with mouthwateringly warm chai flavors like cinnamon, cardamom, and ginger. It is the ultimate delight with coffeehouse-inspired flavor topped with spice buttercream."</p>
+				<p6>Availability: 14 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-32">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Frappe (8).png">
+			<h1>Milk Caramelized Frappe</h1>
+			<h4>&#x20B1; 150</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Made with coconut, chocolate chips, caramel and blended with ice, milk and gevalia cold brew coffee."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-33">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cake (9).png">
+			<h1>Strawberry Milk Cake</h1>
+			<h4>&#x20B1; 700</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Sugar and fresh strawberries. Chop up the strawberries and mix with a little sugar. The sugar helps strawberries release all their delicious juices, which will seep down into the sweet biscuits and whipped cream."</p>
+				<p6>Availability: 13 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-34">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Coffee (9).png">
+			<h1>Chocoffe</h1>
+			<h4>&#x20B1; 120</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Considered the highest quality of coffee. This full-bodied cup offers a unique,rich,fruity flavor with a long-lasting clean finish."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-35">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (9).png">
+			<h1>Triple Cream Cupcake</h1>
+			<h4>&#x20B1; 230</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"These cherry top, chocolate, and vanilla cupcakes are the perfect way to declare your love. For a ridiculously extravagantly joyful Valentine's Day treat, fill with Nutella and top with a chocolate heart."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-36">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Frappe (9).png">
+			<h1>Monster Choco Frappe</h1>
+			<h4>&#x20B1; 180</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"This frozen drink is packed with rich flavors of hot chocolate, homemade brownies, and topped with whipped cream and marshmallows."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-37">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cake (10).png">
+			<h1>Cheesecake with Blueberry Cream (Starry Night Cake)</h1>
+			<h4>&#x20B1; 1200</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Incredible blueberry cheesecake with a blueberry sauce topping. Baked to achieve the allusive light yet rich filling, this is magnificant!"</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-38">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Coffee (10).png">
+			<h1>Black Coffee</h1>
+			<h4>&#x20B1; 35</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Our deepest,heavy-bodied coffee we offer. (Product name) delivers enticing,rich aromas with a medium acidity & a delicious caramel finish."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-39">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/CUPCake (10).png">
+			<h1>Strawberry Fruit Cupcake</h1>
+			<h4>&#x20B1; 230</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"A straightforward sweet lime cupcake base is used to create these delectably soft and moist cupcakes, which are then topped with a light tequila lime frosting. These cupcakes are bursting with zesty, fresh lime flavor, just like the classics."</p>
+				<p6>Availability: 11 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-40">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Frappe (10).png">
+			<h1>Choco Sprinkle Frappe</h1>
+			<h4>&#x20B1; 150</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Mega milkshake known as "Freakshake" Creation combine ice cream chocolate bars and entire slices of cupcakes."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-41">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cake (11).png">
+			<h1>Heart Stopper Cake</h1>
+			<h4>&#x20B1; 2000</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Cake decorating is the art of dressing up of a cake for special occasions such as birthdays, weddings, national or religious holidays."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-42">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Coffee (11).png">
+			<h1>Espresso</h1>
+			<h4>&#x20B1; 100</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"This blend has enhanced flavor characteristics, made by a perfect combination of merengue-taste like and milk notes, with touches of smoke and caramel flavor."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-43">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (11).png">
+			<h1>White cream Cupcake</h1>
+			<h4>&#x20B1; 200</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Handmade vanilla with blue berries cupcakes that are soft and tender, topped with creamy white chocolate icing. An incredibly lovely gift on the most important day."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-44">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Frappe (11).png">
+			<h1>Overflow Caramel Frappe</h1>
+			<h4>&#x20B1; 180</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Caramel syrup meets coffee milk and ice for a rendezvous in the blender while whipped cream and buttery caramel sauce layer on top."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-45">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (12).png">
+			<h1>Chocolate Cupcake</h1>
+			<h4>&#x20B1; 180</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Cupcakes covered in icing made of dark chocolate. Only for chocolate lovers!"</p>
+				<p6>Availability: 20 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-46">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (13).png">
+			<h1>Oreo Cupcake</h1>
+			<h4>&#x20B1; 160</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Try our cookies and cream type of cupcake when you're having trouble deciding between a chocolate and a vanilla cupcake."</p>
+				<p6>Availability: 15 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-47">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (14).png">
+			<h1>Special Cupcake</h1>
+			<h4>&#x20B1; 250</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"This cupcake is so magnificient with this kind of texture and the taste of the sweets and fruits."</p>
+				<p6>Availability: 18 pcs</p6>
+	</div>
+
+	<div class="preview" data-target="p-48">
+		<div class="close-btn">&times;</div>
+			<img src="productsImage/Cupcake (15).png">
+			<h1>Milk Tea Cupcake</h1>
+			<h4>&#x20B1; 200</h4>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Make these stunning homemade cupcakes using this recipe. These wedding cupcakes shine on the big day thanks to their champagne frosting. The softest, fluffiest cupcakes are those made using cake flour, egg whites, and sour cream."</p>
+				<p6>Availability: 19 pcs</p6>
+	</div>
+
+</div>
+		
+<!--Try end-->
+
+
+<!------footer------>
+
+<div class="footer">
+	<div class="containers">
+		<div class="row-1">
+			<div class="footer-col-1">
+				<h3>Visit Out Physical Store</h3>
+				<p>Address: 972-B Aurora Blvd, Bagong Buhay, Q.C, 1109 Metro Manila</p>
+				<p><br>Contact No.: 09123456789</p>
+			</div>
+			<div class="footer-col-2">
+				<img src="image/2Logo.png">
+			</div>
+			<div class="footer-col-3">
+				<h3>Follow Us!</h3>
+				<ul>
+				    <li><img src="social media logo/YoutubeIcon.png" width="16px">Youtube</li>
+				    <li><img src="social media logo/FacebookIcon.png" width="16px">Facebook</li>
+				    <li><img src="social media logo/TiktokIcon.png" width="16px">Tiktok</li>
+				    <li><img src="social media logo/InstagramIcon.png" width="16px">Instagram</li>
+				    <li><img src="social media logo/TeitteriCon.png" width="16px">Twitter</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+<!------from Savior------>
+
+<script>
+
+	function prodClick() {
+	
+	document.getElementById("btn1new").click();
+	
+	}
+	
+	setTimeout(prodClick, 100);
+	
+</script>
+	
+
+<!------POP OP------>
+<script>
+	let preveiwContainer = document.querySelector('.products-preview');
+	let previewBox = preveiwContainer.querySelectorAll('.preview');
+
+	document.querySelectorAll('.row .col-4').forEach(product =>{
+	product.onclick = () =>{
+		preveiwContainer.style.display = 'flex';
+		let name = product.getAttribute('data-name');
+		previewBox.forEach(preview =>{
+		let target = preview.getAttribute('data-target');
+		if(name == target){
+			preview.classList.add('active');
+		}
+		});
+	};
+	});
+
+	previewBox.forEach(close =>{
+	close.querySelector('.close-btn').onclick = () =>{
+		close.classList.remove('active');
+		preveiwContainer.style.display = 'none';
+	};
+	});
+
+</script>
+
+
+</body>
+</html>

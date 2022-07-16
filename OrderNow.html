@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/bukhari-script" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<title>OrderNow</title>
+
+</head>
+
+<body>
+
+<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<img src="image/2Logo.png" width="130px">
+		</div>
+		<nav>
+		<ul id="MenuItems">
+				<li><a href="Homepage.html">Home</a></li>
+				<li><a href="Products.html">Products</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Contacts.html">Contact</a></li>
+				<li class="active"><a href="OrderNow.html">Order Now!</a></li>
+		</ul>
+		</nav>
+			<img src="image/1MenuBar.png" class="menu-icon" onclick="menutoggle()">
+	</div>
+</div>
+
+
+<!---FORM----->
+<div class="container">
+	<div class="col-14">
+	  <h1>Order Now!</h1>
+	  <p>Kindly fill up this form</p>
+	</div>
+  </div>
+  <div class="wrapper">
+	<form action="https://formspree.io/f/xzbolwaq" method="POST" id="my-form">
+	  <div  class="input-group">
+		<div class="input-box">
+		<label for="firstName"></label>
+		<input type="text" id="firstName" placeholder="First Name" name="firstName" required class="name">
+		<i class="fa fa-user"></i>
+	  </div>
+
+	  <div class="input-box">
+		<label for="latsName"></label>
+		<input type="text" id="lastName" placeholder="Last Name" name="lastName" required class="name">
+		<i class="fa fa-user"></i>
+	  </div>
+	  </div>
+
+	  <div  class="input-group">
+		<div class="input-box">
+		<label for="email"></label>
+		<input type="email" id="email" placeholder="Email" name="email" required class="name">
+		<i class="fa fa-envelope"></i>
+	  </div>
+
+	  <div class="input-box">
+		<label for="phone"></label>
+		<input type="text" id="phone" placeholder="Phone no." name="phone" required class="name">
+		<i class="fa fa-phone"></i>
+	  </div>
+	</div>
+	  <div class="input-group">
+		<div class="input-box comm">
+		<label for="massage"></label>
+		<textarea name="massage" id="massage"  placeholder="write your Message here" cols="46" rows="3" required class="name"></textarea>
+		<i class="fa fa-comment"></i>
+	  </div>
+	</div>
+	
+	  <button type="submit" class="btn2"><i class="fa fa-paper-plane"></i>Send Message</button>
+
+	</form>
+  </div>
+</div>
+
+
+<!------footer------>
+
+<div class="footer">
+	<div class="containers">
+		<div class="row-1">
+			<div class="footer-col-1">
+				<h3>Visit Out Physical Store</h3>
+				<p>Address: 972-B Aurora Blvd, Bagong Buhay, Q.C, 1109 Metro Manila</p>
+				<p><br>Contact No.: 09123456789</p>
+			</div>
+			<div class="footer-col-2">
+				<img src="image/2Logo.png">
+			</div>
+			<div class="footer-col-3">
+				<h3>Follow Us!</h3>
+				<ul>
+				    <li><img src="social media logo/YoutubeIcon.png" width="16px">Youtube</li>
+				    <li><img src="social media logo/FacebookIcon.png" width="16px">Facebook</li>
+				    <li><img src="social media logo/TiktokIcon.png" width="16px">Tiktok</li>
+				    <li><img src="social media logo/InstagramIcon.png" width="16px">Instagram</li>
+				    <li><img src="social media logo/TeitteriCon.png" width="16px">Twitter</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

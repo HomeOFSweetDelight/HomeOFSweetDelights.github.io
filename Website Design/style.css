@@ -1,0 +1,244 @@
+*{
+    	margin: 0;
+     	padding: 0;
+     	box-sizing: border-box;
+}
+body{
+    	font-family: 'Poppins', sans-serif;
+    	color: #513724;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding 20px;
+}
+nav{
+    	flex: 1;
+    	text-align: right;
+}
+nav ul{
+    	display: inline-block;
+    	list-style-type: none;
+    	font-size: 18px;
+}
+nav ul li{
+    	display: inline-block;
+    	margin-right: 20px;
+	font-weight: bold;
+	margin: 5px;
+	padding: 10px;
+}
+nav ul li:hover{
+	background-color: #C1987E;
+  	color: #513724;
+	padding: 10px;
+	border-radius: 3px;
+}
+nav ul li.active a{
+	background-color: #C1987E;
+  	color: #513724;
+	padding: 10px;
+	border-radius: 3px;
+}
+a{
+    	text-decoration: none;
+    	color: #513724;
+}
+.container{
+	max-width: 1700px;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.row{
+    	display: flex;
+    	align-items: center;
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+}
+.col-2{
+    	flex-basis: 50%;
+    	min-width: 300px;
+}
+.col-2 h1{
+    	font-size: 70px;
+    	margin: 25px 0;
+	font-family: 'Bukhari Script', sans-serif;
+  	letter-spacing: 5px;
+	line-height: 1.5;
+	font-weight: 200;                                     
+}
+.col-2 p{
+    	font-size: 20px;
+    	line-height: 1.3;
+    	margin: 25px 0;
+	font-weight: bold;
+}
+.btn{
+    	display: inline-block;
+    	background: #513724;
+    	color: white;
+    	padding: 8px 30px;
+    	margin: 30px 0;
+    	border-radius: 30px;
+	transition: background 0.5s;
+}
+.btn:hover{
+	background: #C1987E;
+	color: #513724; 
+}
+.categories{
+  	margin: 70px 0;
+}
+.col-3{
+    	flex-basis: 30%;
+   	min-width: 250px;
+   	margin-bottom: 30px;
+}
+.col-3 img{
+   	width: 100%;
+}
+.small-container{
+	max-width: 1770px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.col-4{
+	flex-basis: 20%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+.col-4 img{
+	width: 100%;
+}
+.title{
+    	text-align: center;
+    	margin: 0 auto 80px;
+    	position: relative;
+    	line-height: 60px;
+	font-size: 30px;
+}
+.title::after{
+  	content: '';
+   	background: red;
+   	width: 80px;
+   	height: 5px;
+   	border-radius: 5px;
+   	position: absolute;
+   	bottom: 0;
+   	left: 50%;
+   	transform: translateX(-50%);
+}
+h4{
+    	font-size: 20px;
+    	color: #513724;
+}
+.col-4 p{
+    	font-size: 15px;
+    	color: #828183;
+}
+.col-4:hover{
+	transform: translateY(-5px);
+}
+#myBtn {
+  	display: none;
+  	position: fixed;
+  	bottom: 10px;
+  	right: 30px;
+  	z-index: 99;
+  	font-size: 15px;
+  	border: none;
+  	outline: none;
+  	background-color: transparent;
+  	color: #513724;
+  	cursor: pointer;
+  	padding: 15px;
+  	border-radius: 4px;
+}
+#myBtn:hover {
+  	background-color: #C1987E;
+}
+.footer{
+	background: #76523B;
+	color: #FFF0E8;
+	font-size: 14px;
+	padding: 10px 0px 10px;
+}
+.footer p{
+	color: #FFF0E8;
+}
+.footer h3{
+	color: #FFF0E8;
+	margin-bottom: 10px;
+}
+.footer-col-1, footer-col-2, footer-col-3, {
+	min-width: 100px;
+	margin-bottom: 5px;
+}
+.footer-col-1{
+	flex-basis: 20%;
+}
+.footer-col-2{
+	flex: 0;
+	text-align: center;
+}
+.footer-col-2 img{
+	width: 120px
+}
+.footer-col-3,{
+	flex-basis: 20%;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+	font-size: 14px;
+}
+.containers{
+	max-width: 1700px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.menu-icon{
+ 	width: 25px;
+	margin-left: 20px;
+	display: none;
+}
+
+@media only screen and (max-width: 800px){
+	nav ul{
+		position: absolute;
+		top: 100px;
+		left: 0;
+		background: #FFF0E8;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+	nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li:hover{
+		background-color: #C1987E;
+		border-radius: 8px;
+	}
+.menu-icon{
+		display: block;
+		cursor: pointer;
+	}
+}
+@media only screen and (max-width: 600px){
+	.row{
+		text-align: center;
+	}
+	.col-1, .col-2, .col-3{
+		flex-basis: 100%;
+	}
+}
