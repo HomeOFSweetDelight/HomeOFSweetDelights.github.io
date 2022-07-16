@@ -67,10 +67,10 @@ a{
     min-width: 300px;
 }
 .col-2 h1{
-	font-size: 70px;
+	font-size: 80px;
     margin: 25px 0;
 	font-family: 'Oleo Script', cursive;
-  	letter-spacing: 5px;
+  	letter-spacing: 3px;
 	line-height: 1.5;
 	font-weight: 200;                                     
 }
